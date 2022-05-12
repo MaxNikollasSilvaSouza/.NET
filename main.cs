@@ -25,7 +25,7 @@ namespace Company.Function
            try
            {
                var client = new MongoClient(
-                "mongodb+srv://Username:password@restapi.5pflo.mongodb.net/databasename?retryWrites=true&w=majority"
+                "mongodb+srv://Username:password@servername.5pflo.mongodb.net/databasename?retryWrites=true&w=majority"
                 );
                 var database = client.GetDatabase("databasename");
                  IMongoCollection<Product> products = database.GetCollection<Product>("colecao");
